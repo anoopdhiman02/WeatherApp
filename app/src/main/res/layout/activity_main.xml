@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/c1">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#BBC2D6"
+
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/edit_icon2x"/>
+
+
+
+
+        </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_below="@id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#BBC2D6">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/image1"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_alignBottom="@id/image1"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <Button
+                                    android:id="@+id/bt1"
+                                    android:layout_width="170dp"
+                                    android:text="AccuWeather"
+
+                                    android:layout_height="wrap_content" />
+                                <Button
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="170dp"
+                                    android:text="Hourly forecast"
+
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="7">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Mon"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="1"
+                                    android:textColor="#000000"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Tue"
+                                    android:layout_weight="1.0"
+                                    android:textColor="#000000"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Wed"
+                                    android:layout_weight="1.1"
+                                    android:textColor="#000000"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Thu"
+                                    android:layout_weight="1.2"
+                                    android:textColor="#000000"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Fri"
+                                    android:textColor="#000000"
+                                    android:layout_weight="1.3"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Sat"
+                                    android:textColor="#000000"
+                                    android:layout_weight="1.4"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:text="Sun"
+                                    android:textColor="#000000"
+                                    android:layout_marginRight="20dp"
+
+                                    />
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#BBC2D6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                        <LinearLayout
+                            android:id="@+id/l2"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_weight="7"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:text="Mon"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.0"
+                                android:text="Tue"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.1"
+                                android:text="Wed"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.2"
+                                android:text="Thu"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.3"
+                                android:text="Fri"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.4"
+                                android:text="Sat"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="20dp"
+                                android:text="Sun"
+                                android:textColor="#000000"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l3"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_weight="7"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:text="Mon"
+                                android:textColor="#000000" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.0"
+                                android:text="Tue"
+                                android:textColor="#000000" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.1"
+                                android:text="Wed"
+                                android:textColor="#000000" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.2"
+                                android:text="Thu"
+                                android:textColor="#000000" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.3"
+                                android:text="Fri"
+                                android:textColor="#000000" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.4"
+                                android:text="Sat"
+                                android:textColor="#000000" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="20dp"
+                                android:text="Sun"
+                                android:textColor="#000000"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l6"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/l3"
+                            android:layout_weight="7"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:text="Mon"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.0"
+                                android:text="Tue"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.1"
+                                android:text="Wed"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.2"
+                                android:text="Thu"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.3"
+                                android:text="Fri"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.4"
+                                android:text="Sat"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="20dp"
+                                android:text="Sun"
+                                android:textColor="#000000"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l5"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/l6"
+                            android:layout_weight="7"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:text="Mon"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.0"
+                                android:text="Tue"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.1"
+                                android:text="Wed"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.2"
+                                android:text="Thu"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.3"
+                                android:text="Fri"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.4"
+                                android:text="Sat"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="20dp"
+                                android:text="Sun"
+                                android:textColor="#000000"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/l5">
+
+                            <lecho.lib.hellocharts.view.LineChartView
+                                android:id="@+id/linechart"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/l4"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/l9"
+                            android:layout_weight="7"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:text="Mon"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.0"
+                                android:text="Tue"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.1"
+                                android:text="Wed"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.2"
+                                android:text="Thu"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.3"
+                                android:text="Fri"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.4"
+                                android:text="Sat"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="20dp"
+                                android:text="Sun"
+                                android:textColor="#000000"
+
+                                />
+
+
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:text="Extemded forecast"
+                            android:layout_marginRight="10dp"
+                            />
+
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="#BBC2D6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text10001"
+                            android:text="Current date and time"
+                            android:layout_centerHorizontal="true"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:id="@+id/l15"
+                            android:layout_below="@id/text10001"
+                            android:layout_marginTop="10dp">
+                            <ProgressBar
+                                android:id="@+id/circle_progress"
+                                android:layout_marginLeft="30dp"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:indeterminateDrawable="@drawable/progressbarbg"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                />
+                            <ProgressBar
+                                android:id="@+id/circle_progress2"
+                                android:layout_marginLeft="30dp"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:indeterminateDrawable="@drawable/progressbarbg"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                />
+                            <ProgressBar
+                                android:id="@+id/circle_progress3"
+                                android:layout_marginLeft="30dp"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:indeterminateDrawable="@drawable/progressbarbg"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/l16"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/l15">
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:text="Atmospheric pressure"
+                                />
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:text="Humidity"
+                                />
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:text="wind 6.8 mph"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:id="@+id/l17"
+
+                            android:layout_below="@id/l16"
+                            android:layout_marginTop="10dp">
+
+                            <ProgressBar
+                                android:id="@+id/circle_progress4"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="30dp"
+                                android:indeterminateDrawable="@drawable/progressbarbg" />
+                            <ProgressBar
+                                android:id="@+id/circle_progress5"
+                                android:layout_marginLeft="30dp"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:indeterminateDrawable="@drawable/progressbarbg"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                />
+                            <ProgressBar
+                                android:id="@+id/circle_progress6"
+                                android:layout_marginLeft="30dp"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:indeterminateDrawable="@drawable/progressbarbg"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/l18"
+                            android:layout_below="@id/l17">
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:text="Visbility"
+                                />
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:text="Precipitation (Rain)"
+                                />
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:text="Probability (Rain)"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/l19"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@id/l18"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="UN level"/>
+                            <android.support.design.internal.BaselineLayout
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:layout_gravity="center">
+
+
+                            </android.support.design.internal.BaselineLayout>
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="UV Index forecast"
+                                android:textColor="#000fff"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#BBC2D6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/text111"
+                            android:text="2"
+                            android:textSize="20dp"
+                            />
+                        <TextView
+                            android:layout_width="100dp"
+                            android:id="@+id/text222"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@id/text111"
+                            android:text="Low"
+                            android:textSize="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/text333"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text111"
+                            android:text="There is a low danger from the sun's NV rays for the average healthy person."
+
+                            />
+                        <SeekBar
+                            android:layout_marginTop="40dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text333"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Daytime(local time)"/>
+                            <android.support.design.internal.BaselineLayout
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:layout_gravity="center">
+
+
+                            </android.support.design.internal.BaselineLayout>
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Day  night"
+                                android:textColor="#000fff"/>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#BBC2D6">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/r11"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5:45AM Sunrise"/>
+                            <TextView
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7:12AM Sunset"
+                                />
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="RealFeel"/>
+                            <android.support.design.internal.BaselineLayout
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:background="#ffffff"
+                                android:layout_gravity="center">
+
+
+                            </android.support.design.internal.BaselineLayout>
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Month outlook"
+                                android:textColor="#000fff"/>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </RelativeLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#BBC2D6">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/l22"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="7"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:text="Mon"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.0"
+                                android:text="Tue"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.1"
+                                android:text="Wed"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.2"
+                                android:text="Thu"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.3"
+                                android:text="Fri"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1.4"
+                                android:text="Sat"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="20dp"
+                                android:text="Sun"
+                                android:textColor="#000000"
+
+                                />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
